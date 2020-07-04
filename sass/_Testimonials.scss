@@ -1,0 +1,64 @@
+.comment-people {
+    @include relative(380px, 380px);
+    background: linear-gradient(45deg, #168fff 30%, #045db1 70%);
+    border-radius: 50%;
+    top: -7%;
+    left: -5%;
+    box-shadow: 0px 0px 10px 10px #1f2229e1;
+    z-index: 10;
+    .people {
+        @include relative(340px, 128px);
+        @include flex(center);
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 3px #1f2229e1;
+        img {
+            @include absolute(50px, 50px);
+            top: -25%;
+            left: 5%;
+            border-radius: 50%;
+            filter: contrast(1.2);
+        }
+        .comment {
+            position: relative;
+            line-height: 20px;
+            h5 {
+                color: #757474;
+            }
+            p {
+                @include margin-y(7px, 7px);
+                font-weight: 600;
+                color: #0270D7;
+            }
+        }
+        &:nth-child(1) {
+            top: 2%;
+            right: -60%;
+        }
+        &:nth-child(2) {
+            top: -12%;
+            left: -60%;
+        }
+        &:nth-child(3) {
+            left: 23%;
+        }
+    }
+}
+
+.ball-one {
+    @include absolute(190px, 190px);
+    background: linear-gradient(45deg, #b10404 30%, #ff3c3c 70%);
+    border-radius: 50%;
+    z-index: 8;
+    top: 40%;
+    right: 30%;
+}
+
+.ball-two {
+    @include absolute(100px, 100px);
+    background: linear-gradient(45deg, #16ff3d 30%, #04b112 70%);
+    border-radius: 50%;
+    z-index: 8;
+    bottom: -7%;
+    left: 20%;
+}

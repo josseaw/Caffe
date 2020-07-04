@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Bree Serif";
+    src: url('../font/BreeSerif-Regular.otf') format('otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bree serif", sans-serif;
+}
+
+$blue: #0f64f6;
+$info: #7cd9ea;
+$white: #fff;
+$h1: 31px;
+$h2: 28px;
+$h3: 23px;
+$h4: 18px;
+$h5: 16px;
+h1 {
+    font-size: $h1;
+}
+
+h2 {
+    font-size: $h2;
+}
+
+h3 {
+    font-size: $h3;
+}
+
+h4 {
+    font-size: $h4;
+}
+
+h5 {
+    font-size: $h5;
+}
+
+th {
+    float: left;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-white {
+    color: $white;
+}
+
+.bg-blue {
+    background: $blue;
+}
+
+.bg-info {
+    background: $info;
+}
+
+.bg-white {
+    background: $white;
+}
+
+.index {
+    z-index: 99;
+}

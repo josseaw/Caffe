@@ -1,0 +1,95 @@
+.title {
+    @include flex(center);
+    margin-bottom: 40px;
+    width: 280px;
+    height: 30px;
+    z-index: 55;
+    h1 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+.product {
+    @include relative(440px, 325px);
+    border: 4px solid #bdb7b7;
+    border-radius: 10px;
+    .card.one {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        &:nth-child(1) {
+            background: url(../images/Kopi_Cappucino.jpg);
+            background-position: center;
+            background-size: cover;
+            h4 {
+                position: absolute;
+                bottom: 5px;
+                right: 10px;
+                color: #ffffff;
+                text-transform: capitalize;
+            }
+            &:hover~.card.one:nth-child(2) {
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            }
+        }
+        &:nth-child(2) {
+            background: url(../images/Kopi_Espresso.jpg);
+            background-position: center;
+            background-size: cover;
+            z-index: 57;
+            transition: .5s;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+            h4 {
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                color: #ffffff;
+                text-transform: capitalize;
+            }
+            &:hover {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+    }
+    .card.two {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        &:nth-child(1) {
+            background: url(../images/Kopi_Macchiato.jpg);
+            background-position: center;
+            background-size: cover;
+            h4 {
+                position: absolute;
+                bottom: 5px;
+                right: 10px;
+                color: #ffffff;
+                text-transform: capitalize;
+            }
+            &:hover~.card.two:nth-child(2) {
+                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            }
+        }
+        &:nth-child(2) {
+            background: url(../images/Kopi_Robusta.jpg);
+            background-position: center;
+            background-size: cover;
+            z-index: 57;
+            transition: .5s;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0% 100%);
+            h4 {
+                position: absolute;
+                top: 5px;
+                left: 10px;
+                color: #ffffff;
+                text-transform: capitalize;
+            }
+            &:hover {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+        }
+    }
+}

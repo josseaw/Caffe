@@ -1,0 +1,137 @@
+@media screen and (max-width:737px) {
+    .content .btn a {
+        @include padding-x(20px, 20px);
+        @include padding-y(10px, 10px);
+        @include margin-y(8px, 8px);
+        font-size: 12px;
+    }
+    .comment-people {
+        @include flex(center);
+        flex-direction: column;
+        left: -5%;
+        .people {
+            @include relative(285px, 108px);
+            @include margin-y(10px, 10px);
+            &:nth-child(1) {
+                top: 0%;
+                right: -4%;
+            }
+            &:nth-child(2) {
+                top: 0%;
+                left: -4%;
+            }
+            &:nth-child(3) {
+                bottom: 0%;
+                left: -4%;
+            }
+        }
+    }
+    .ball-one {
+        top: 47%;
+        right: 10%;
+    }
+    .ball-two {
+        bottom: -16%;
+        left: 18%;
+    }
+}
+
+@media screen and (max-width:921px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h5 {
+        font-size: 14px;
+    }
+    .content img {
+        @include absolute(90%, 90%);
+    }
+    .comment-people {
+        @include flex(center);
+        flex-direction: column;
+        left: -5%;
+        .people {
+            @include relative(300px, 108px);
+            @include margin-y(10px, 10px);
+            img {
+                top: -30%;
+            }
+            .comment p {
+                @include margin-y(4px, 4px);
+            }
+            &:nth-child(1) {
+                top: 0%;
+                right: -6%;
+            }
+            &:nth-child(2) {
+                top: 0%;
+                left: -6%;
+            }
+            &:nth-child(3) {
+                bottom: 0%;
+                left: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1090px) {
+    .p-x {
+        @include padding-x(30px, 30px);
+    }
+    .flex-between {
+        @include flex(center);
+        flex-direction: column;
+    }
+    .content {
+        @include relative(100%, 100%);
+        .content-title {
+            text-align: center;
+        }
+        .btn {
+            @include flex(center);
+        }
+    }
+    .box {
+        display: none;
+    }
+    .box span:nth-child(7) {
+        right: -1%;
+    }
+    .box span:nth-child(8) {
+        right: 18%;
+    }
+    .title {
+        margin-bottom: 10px;
+    }
+    .product {
+        @include relative(340px, 265px);
+    }
+}
+
+@media screen and (max-width:1190px) {
+    .contact {
+        @include relative(100%, 100px);
+        margin-top: 80px;
+        .contact-title {
+            @include relative(100%, 50%);
+            @include flex(center);
+            p {
+                color: #ffff;
+            }
+        }
+        .sosmed {
+            @include relative(100%, 50%);
+            @include flex(center);
+            .sosmed-row {
+                @include relative(190px, 50px);
+                @include flex(center);
+                flex-direction: row;
+                margin-left: 0px;
+            }
+        }
+    }
+}
